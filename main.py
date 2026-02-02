@@ -10,7 +10,7 @@ from telegram.ext import (
 )
 
 # ------------------ CONFIG ------------------
-BOT_TOKEN = os.getenv("7856522676:AAEgPkOq0-_7-1e5pop2Wu4aBPskJwxY5aw") 
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Add in Replit Secrets
 ADMIN_ID = 6185091342
 UPI_ID = "factzone3741@oksbi"
 RECEIVER_NAME = "ROHIT ROHIT"
@@ -124,7 +124,7 @@ Thread(target=run).start()
 
 # ------------------ MAIN ------------------
 def main():
-    app_bot = ApplicationBuilder().token(7856522676:AAEgPkOq0-_7-1e5pop2Wu4aBPskJwxY5aw).build()
+    app_bot = ApplicationBuilder().token(BOT_TOKEN).build()
     app_bot.add_handler(CommandHandler("start", start))
     app_bot.add_handler(CallbackQueryHandler(course_select, pattern="^course_"))
     app_bot.add_handler(CallbackQueryHandler(admin_action, pattern="^(approve|reject)_"))
