@@ -10,7 +10,7 @@ from telegram.ext import (
 )
 
 # ------------------ CONFIG ------------------
-BOT_TOKEN = os.getenv(7856522676:AAEgPkOq0-_7-1e5pop2Wu4aBPskJwxY5aw) 
+BOT_TOKEN = os.getenv("7856522676:AAEgPkOq0-_7-1e5pop2Wu4aBPskJwxY5aw") 
 ADMIN_ID = 6185091342
 UPI_ID = "factzone3741@oksbi"
 RECEIVER_NAME = "ROHIT ROHIT"
